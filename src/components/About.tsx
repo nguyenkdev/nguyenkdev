@@ -60,6 +60,7 @@ const About: React.FC = () => {
               <img
                 src="/assets/self.png"
                 alt="Me"
+                loading="lazy"
                 className="size-64 lg:size-96 rounded-full"
               />
             </div>
@@ -112,6 +113,7 @@ const About: React.FC = () => {
                 <img
                   src={`/assets/tech/${tech.icon}`}
                   alt={`${tech.name} icon`}
+                  loading="lazy"
                   className="w-auto h-12 mb-2"
                 />
                 <p className="text-sm font-medium">{tech.name}</p>

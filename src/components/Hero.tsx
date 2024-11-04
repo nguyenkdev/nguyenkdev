@@ -56,12 +56,12 @@ export default function Hero() {
               </p>
               <div className="flex gap-4 mt-4 items-center justify-center">
                 <a
-                  href="/assets/cv/CV_Tran_Nguyen_Khoi_Nguyen.pdf"
+                  href="/assets/cv/Tran_Nguyen_Khoi_Nguyen_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div className="rounded-full border-2 border-slate-200 p-1 text-sm font-semibold text-center flex items-center justify-center">
-                    CV
+                    Resume
                   </div>
                 </a>
                 <a

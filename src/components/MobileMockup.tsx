@@ -48,6 +48,7 @@ const MobileMockup: React.FC<MobileMockupProps> = ({ link }) => {
         <img
           src="/assets/iphone-mockup.png" // The mobile mockup image
           alt="Mobile Mockup"
+          loading="lazy"
           className="absolute left-0 right-0 w-full h-auto pointer-events-none" // Set pointer-events to none for the mockup
         />
         {/* Scrollable container for the mobile website screenshot */}
@@ -62,6 +63,7 @@ const MobileMockup: React.FC<MobileMockupProps> = ({ link }) => {
             <img
               src={link} // Use the link prop for the image source
               alt="Mobile Website Screenshot"
+              loading="lazy"
               className="h-auto w-full" // Maintain aspect ratio
             />
           ) : (

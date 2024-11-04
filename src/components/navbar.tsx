@@ -20,10 +20,16 @@ export default function Navbar() {
   const parts = pathname.split("/").filter(Boolean);
   const locale = parts[0];
   const [active, setActive] = useState("/" + parts[1]);
+  const [isClickable, setIsClickable] = useState(true);
   const router = useRouter();
+  const timeout = 600;
 
   const handleClick = (path: string) => {
-    setActive(path);
+    if (isClickable) {
+      setIsClickable(false);
+      setActive(path);
+      setTimeout(() => setIsClickable(true), timeout); // Timeout to prevent spam
+    }
   };
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -33,22 +39,31 @@ export default function Navbar() {
   };
 
   const handleWorkClick = () => {
-    if (pathname !== `/${locale}`) {
-      router.push("/");
-      setTimeout(() => {
+    if (isClickable) {
+      setIsClickable(false);
+      if (pathname !== `/${locale}`) {
+        router.push("/");
+        setTimeout(() => {
+          scrollToSection("work");
+          setIsClickable(true);
+        }, timeout);
+      } else {
         scrollToSection("work");
-      }, 500);
-    } else {
-      scrollToSection("work");
+        setTimeout(() => setIsClickable(true), timeout);
+      }
     }
   };
 
   const handleContactClick = () => {
-    if (pathname.includes("info") || pathname === `/${locale}`) {
-      scrollToSection("contact");
-    } else {
-      router.push("/");
-      scrollToSection("contact");
+    if (isClickable) {
+      setIsClickable(false);
+      if (pathname.includes("info") || pathname === `/${locale}`) {
+        scrollToSection("contact");
+      } else {
+        router.push("/");
+        scrollToSection("contact");
+      }
+      setTimeout(() => setIsClickable(true), timeout);
     }
   };
 
@@ -90,16 +105,21 @@ export default function Navbar() {
                 handleWorkClick();
                 handleClick("/work");
               }}
-              className="nav-toggle work w-inline-block text-[#f2f2f2] text-center rounded-[18px] flex justify-center items-center w-[80px] h-[36px] no-underline transition-all duration-200 ease-[cubic-bezier(.165,.84,.44,1)] hover:bg-gradient-to-l from-transparent to-[#f2f2f20d]"
+              className={`nav-toggle work w-inline-block text-[#f2f2f2] text-center rounded-[18px] flex justify-center items-center w-[80px] h-[36px] no-underline transition-all duration-200 ease-[cubic-bezier(.165,.84,.44,1)] hover:bg-gradient-to-l from-transparent to-[#f2f2f20d] ${
+                !isClickable ? "pointer-events-none opacity-50" : ""
+              }`}
             >
               <div className="text-nav-toggle">Work</div>
             </Link>
+
             <Link
               href={`/${locale}/info`}
               onClick={(e) => {
                 handleClick("/info");
               }}
-              className="nav-toggle w-inline-block text-[#f2f2f2] text-center rounded-[18px] flex justify-center items-center w-[80px] h-[36px] no-underline transition-all duration-200 ease-[cubic-bezier(.165,.84,.44,1)] hover:bg-gradient-to-r from-transparent to-[#f2f2f20d]"
+              className={`nav-toggle w-inline-block text-[#f2f2f2] text-center rounded-[18px] flex justify-center items-center w-[80px] h-[36px] no-underline transition-all duration-200 ease-[cubic-bezier(.165,.84,.44,1)] hover:bg-gradient-to-r from-transparent to-[#f2f2f20d] ${
+                !isClickable ? "pointer-events-none opacity-50" : ""
+              }`}
             >
               <div className="text-nav-toggle">Info</div>
             </Link>

@@ -1,9 +1,11 @@
 # Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Khoi Nguyen
 
 ## Frontend Developer
-------------------
 
-• I am a junior front-end developer with over six months of hands-on experience in creating responsive and user-friendly web applications. • My analytical mindset allows me to approach problems with a logical perspective, ensuring efficient solutions and high-quality code. • As a perfectionist, I pay close attention to details in user interface design and constantly analyze user behavior to enhance user experience. • I am open-minded to learning new technologies and am eager to grow in this dynamic field
+• I am a junior front-end developer with over six months of hands-on experience in creating responsive and user-friendly web applications. 
+• My analytical mindset allows me to approach problems with a logical perspective, ensuring efficient solutions and high-quality code. 
+• As a perfectionist, I pay close attention to details in user interface design and constantly analyze user behavior to enhance user experience. 
+• I am open-minded to learning new technologies and am eager to grow in this dynamic field
 
 * 🖥️  See my portfolio at [https://nguyenkdev.vercel.app](http://nguyenkdev.vercel.app/)
 * ✉️  You can contact me at [nguyenkdev@gmail.com](mailto:nguyenkdev@gmail.com)

@@ -53,6 +53,7 @@ const LaptopMockup: React.FC<LaptopMockupProps> = ({ link }) => {
         <img
           src="/assets/macbook-mockup.png" // The laptop mockup image
           alt="Laptop Mockup"
+          loading="lazy"
           className="absolute left-0 right-0 w-full h-auto pointer-events-none" // Set pointer-events to none
         />
         {/* Scrollable container for the website screenshot */}
@@ -67,6 +68,7 @@ const LaptopMockup: React.FC<LaptopMockupProps> = ({ link }) => {
             <img
               src={link} // Use the link prop for the image source
               alt="Website Screenshot"
+              loading="lazy"
               className="h-auto w-full" // Maintain aspect ratio
             />
           ) : (
