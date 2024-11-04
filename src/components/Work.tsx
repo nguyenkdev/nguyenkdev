@@ -132,10 +132,10 @@ export default function Work() {
               >
                 <div className="relative mt-[10%]">
                   <div className="flex justify-end ">
-                    <LaptopMockup link="/assets/vchatshop-fullpage.png" />
+                    <LaptopMockup link="/assets/images/vchatshop.png" />
                   </div>
                   <div className="absolute top-4 right-0">
-                    <MobileMockup link="/assets/vchatshop-mobile-fullpage.png" />
+                    <MobileMockup link="/assets/images/vchatshop-mobile.jpg" />
                   </div>
                 </div>
               </a>
@@ -240,10 +240,10 @@ export default function Work() {
               >
                 <div className="relative mt-[10%]">
                   <div className="flex justify-end ">
-                    <LaptopMockup link="/assets/tapdoanvk-fullpage.png" />
+                    <LaptopMockup link="/assets/images/tapdoanvk.png" />
                   </div>
                   <div className="absolute top-4 right-0">
-                    <MobileMockup link="/assets/tapdoanvk-mobile-fullpage.webp" />
+                    <MobileMockup link="/assets/images/tapdoanvk-mobile.jpg" />
                   </div>
                 </div>
               </a>

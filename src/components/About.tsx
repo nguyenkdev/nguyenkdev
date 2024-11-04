@@ -58,7 +58,7 @@ const About: React.FC = () => {
           <div className="flex-1 flex justify-center items-center ">
             <div className="relative shadow-[0_0_60px_#0003,0_30px_80px_#00000080] backdrop-filter-none outline outline-1 outline-offset-[-1px] outline-[#f2f2f226] bg-gradient-radial from-[#f2f2f233] to-transparent rounded-full p-2 overflow-hidden w-fit h-fit">
               <img
-                src="/assets/self.png"
+                src="/assets/images/self.webp"
                 alt="Me"
                 loading="lazy"
                 className="size-64 lg:size-96 rounded-full"
