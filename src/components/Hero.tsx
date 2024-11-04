@@ -32,7 +32,7 @@ export default function Hero() {
           [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-      <div className="flex justify-center items-center mx-auto max-w-screen-lg px-4 lg:px-8 lg:h-screen mt-[30%] md:mt-[20%] lg:mt-0 relative z-10">
+      <div className="flex justify-center items-center mx-auto max-w-screen-lg px-4 lg:px-8 lg:h-screen mt-[30%] md:mt-[20%] lg:mt-0 relative z-5">
         <div className="flex flex-col">
           <div>
             <h3 className="font-medium">Tran Nguyen Khoi Nguyen</h3>

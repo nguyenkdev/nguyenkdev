@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact">
-      <div className="flex flex-col lg:flex-row justify-between mx-auto max-w-screen-lg px-4 lg:px-8 py-8 gap-16">
+      <div className="flex flex-col lg:flex-row justify-between mx-auto max-w-screen-lg px-4 lg:px-8 py-8 gap-8">
         <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
           <h2 className="text-2xl font-bold text-white mb-4">Contact Me</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
             </button>
           </form>
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col gap-4">
+        <div className="w-full lg:w-fit flex flex-col gap-4">
           <h3 className="text-lg font-semibold text-white mb-2">
             Connect With Me
           </h3>

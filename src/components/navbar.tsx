@@ -53,7 +53,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 flex w-full justify-between p-4 z-10">
+    <nav className="fixed top-0 flex w-full justify-between p-4 z-20">
       <div className={`${pacifico.variable} flex items-center`}>
         <Link
           href={"/"}
