@@ -60,8 +60,8 @@ export default function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="rounded-full border-2 border-slate-200 p-1 text-sm font-semibold text-center flex items-center justify-center">
-                    Resume
+                  <div className="rounded-full border-2 border-slate-200 py-1 px-2 text-sm font-semibold text-center flex items-center justify-center">
+                    Résumé
                   </div>
                 </a>
                 <a
