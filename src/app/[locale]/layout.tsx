@@ -44,7 +44,7 @@ export default async function RootLayout({
         >
           <NextIntlClientProvider messages={messages}>
             <Navbar />
-            <main>{children}</main>
+            <main className="lato">{children}</main>
             <Contact />
             <CopyrightFooter />
             <Toaster />

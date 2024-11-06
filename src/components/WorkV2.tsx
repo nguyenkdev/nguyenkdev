@@ -10,9 +10,12 @@ import {
 } from "@/components/ui/card";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import Ripple from "material-ripple-effects";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function WorkV2() {
   const ripple = new Ripple();
+  const locale = useLocale();
   const vchatshopTech = [
     {
       id: 1,
@@ -97,24 +100,30 @@ export default function WorkV2() {
     },
     {
       id: 6,
+      name: "SCSS",
+      designation: "",
+      image: "/assets/tech/sass.svg",
+    },
+    {
+      id: 7,
       name: "Bootstrap",
       designation: "",
       image: "/assets/tech/bootstrap.svg",
     },
     {
-      id: 7,
+      id: 8,
       name: "Angular Material",
       designation: "",
       image: "/assets/tech/angular-material.svg",
     },
     {
-      id: 8,
+      id: 9,
       name: "EmailJS",
       designation: "",
       image: "/assets/tech/emailjs.svg",
     },
     {
-      id: 9,
+      id: 10,
       name: "Google Sheet API",
       designation: "",
       image: "/assets/tech/google-sheet.svg",
@@ -173,8 +182,8 @@ export default function WorkV2() {
   ];
   return (
     <section id="work">
-      <div className="mx-auto max-w-screen-lg px-4 lg:px-8 pb-8 pt-[20%] sm:pt-[10%] lg:pt-16 ">
-        <div>
+      <div className="mx-auto max-w-screen-lg px-4 lg:px-8 pb-8 pt-[20%] sm:pt-[10%] lg:pt-16">
+        <div className="flex flex-col gap-4">
           <div className="relative shadow-[0_0_60px_#0003,0_30px_80px_#00000080] backdrop-filter-none outline outline-1 outline-offset-[-1px] outline-[#f2f2f226] bg-gradient-radial from-[#f2f2f233] to-transparent rounded-3xl p-2 overflow-hidden w-full h-fit">
             <div className="relative shadow-[0_0_60px_#0003,0_30px_80px_#00000080] backdrop-filter-none outline outline-1 outline-offset-[-1px] outline-[#f2f2f226] bg-gradient-radial from-[#f2f2f233] to-transparent rounded-3xl p-6 lg:p-8 overflow-hidden w-full h-fit bg-[#1a1a1a]">
               <div className="flex flex-col gap-6">
@@ -272,10 +281,10 @@ export default function WorkV2() {
                             <AnimatedTooltip items={vchatshopTech} />
                           </div>
                         </CardContent>
-                        <CardFooter>
+                        {/* <CardFooter>
                           <div className="flex justify-end w-full">
-                            <a
-                              href="#_"
+                            <Link
+                              href={`/${locale}/detail/vchatshop`}
                               onClick={(e) => ripple.create(e, "light")}
                               className="relative inline-flex items-center justify-center px-2 py-1 overflow-hidden font-medium text-yellow-600 transition duration-300 ease-out border-2 border-yellow-500 rounded-full shadow-md group"
                             >
@@ -301,9 +310,9 @@ export default function WorkV2() {
                               <span className="relative text-sm font-normal invisible">
                                 Learn more
                               </span>
-                            </a>
+                            </Link>
                           </div>
-                        </CardFooter>
+                        </CardFooter> */}
                       </div>
                     </div>
                   </Card>
@@ -351,10 +360,11 @@ export default function WorkV2() {
                             <AnimatedTooltip items={vkTech} />
                           </div>
                         </CardContent>
-                        <CardFooter>
+                        {/* <CardFooter>
                           <div className="flex justify-end w-full">
-                            <a
-                              href="#_"
+                            <Link
+                              href={`/${locale}/detail/vk`}
+                              locale={locale}
                               onClick={(e) => ripple.create(e, "light")}
                               className="relative inline-flex items-center justify-center px-2 py-1 overflow-hidden font-medium text-yellow-600 transition duration-300 ease-out border-2 border-yellow-500 rounded-full shadow-md group"
                             >
@@ -380,9 +390,9 @@ export default function WorkV2() {
                               <span className="relative text-sm font-normal invisible">
                                 Learn more
                               </span>
-                            </a>
+                            </Link>
                           </div>
-                        </CardFooter>
+                        </CardFooter> */}
                       </div>
                     </div>
                   </Card>

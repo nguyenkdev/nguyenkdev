@@ -77,6 +77,49 @@ body {
   box-shadow: rgba(51, 177, 166, 0.35) 0px 22px 70px 4px;
 }
 
+.bg-radial {
+  background-image: radial-gradient(
+    circle farthest-side at 50% 0,
+    #00639b80,
+    #0000
+  );
+}
+
+.text-des {
+  color: #f2f2f299;
+}
+
+.bg-radial-red {
+  background-image: radial-gradient(
+    circle farthest-side at 50% 0,
+    #f04e30,
+    #0000
+  );
+}
+
+.container-highlight {
+  grid-row-gap: 48px;
+  background-color: #f2f2f20a;
+  background-image: radial-gradient(circle closest-corner at 50% 0, #64d2ff0d, #0000);
+  border-radius: 24px;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px 32px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 40px 100px #0006;
+}
+
+.project-title {
+  background-image: linear-gradient(to bottom, #f2f2f2 50%, transparent);
+  letter-spacing: -1px;
+  text-shadow: 0 5px 15px #0057ff33, 0 -5px 15px #ff5a0026,
+    0 -5px 25px #ffffff40;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
