@@ -38,8 +38,7 @@ export default function Hero() {
             <h3 className="font-medium">Tran Nguyen Khoi Nguyen</h3>
             <div className="">
               <h1 className="text-5xl font-bold my-6">
-                <div className="text-gold">Frontend Developer</div>
-                <div className="text-gold">with Full Stack Experience</div>
+                <div className="text-gold">Full Stack Developer</div>
               </h1>
             </div>
           </div>
@@ -56,7 +55,7 @@ export default function Hero() {
               </p>
               <div className="flex gap-4 mt-4 items-center justify-center">
                 <a
-                  href="/assets/cv/Tran_Nguyen_Khoi_Nguyen_Resume.pdf"
+                  href="/assets/cv/Full-stack_TranNguyenKhoiNguyen_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

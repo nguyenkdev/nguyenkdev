@@ -85,7 +85,7 @@ const Contact: React.FC = () => {
               Connect With Me
             </h3>
             <a
-              href="/assets/cv/Tran_Nguyen_Khoi_Nguyen_Resume.pdf"
+              href="/assets/cv/Full-stack_TranNguyenKhoiNguyen_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex gap-2 items-center text-shadow-hover text-gray-200"
