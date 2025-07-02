@@ -55,7 +55,7 @@ export default function Hero() {
               </p>
               <div className="flex gap-4 mt-4 items-center justify-center">
                 <a
-                  href="/assets/cv/Full-stack_TranNguyenKhoiNguyen_Resume.pdf"
+                  href="/assets/cv/TranNguyenKhoiNguyen-fullstack.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
